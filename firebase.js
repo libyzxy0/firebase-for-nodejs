@@ -28,7 +28,7 @@ function readData(path, callback) {
     let dataArray = [];
     snapshot.forEach((childSnapshot) => {
       const childData = childSnapshot.val();
-      delete childData.id;
+
       dataArray.push(childData)
     });
     callback(dataArray);
